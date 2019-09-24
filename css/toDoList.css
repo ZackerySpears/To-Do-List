@@ -1,5 +1,5 @@
 body {
-    background-color: #CCC9E7;
+    background:linear-gradient(to right,aqua, #CCC9E7) ;
     text-align: center;
     font-family: 'Quicksand', sans-serif;
 }
@@ -62,5 +62,47 @@ input {
 
 #submit:hover {
     background-color:white;
+    color:#F038FF;  
+}
+
+#submit:focus, input:focus{
+    border: 3px solid brown;
+    outline:none;
+}
+
+/* Styles for the ul and li */
+
+ul {
+    margin: 20px;
+    text-align: left;
+}
+
+li {
+    list-style: none;
+    border: 3px solid brown;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
     color:#F038FF;
+    background-color: #A1FCDF;
+    font-weight: bold;
+
+    transition: all 0.75s ease;
+    /* Webkit, for Safari and Opera */
+    -webkit-transition: all 0.75s ease;
+    /* Mozilla, for Firefox */
+    -moz-transition: all 0.75 ease;
+    /* Opera */
+    -o-transition: all 0.75;
+}
+
+li:hover {
+    background-color: white;
+}
+
+/* Style for when a list item is marked done */
+
+.done {
+    background-color:#CCC9E7 !important;
+    color: brown;
 }
