@@ -106,3 +106,13 @@ li:hover {
     background-color:#CCC9E7 !important;
     color: brown;
 }
+
+.delete {
+    display: none;
+}
+
+li > button {
+    float:right;
+    border:none;
+    background: none;
+}
